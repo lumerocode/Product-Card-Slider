@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #595959;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.container {
+    height:500px;
+    width: 800px;
+    background: #262626;
+    margin: 50px auto;
+    box-shadow: 0 0 15px 5px #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .slides {
+    height: 100%;
+    width: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slide1, .slide2, .slide3 {
+    height: 500px;
+    width: 800px;
+    margin-left: 3px;
+    transition: .5s;
+}
+
+.container .images {
+    height: 400px;
+    width: 400px;
+    margin-top: 15px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .images > img {
+    height: 95%;
+    width: 95%;
+    object-fit: cover;    
+}
+
+.container .content {
+    height: 300px;
+    padding: 50px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: verdana;
+    color: #ccc;
+}
+
+.content > h1 {
+    color: #ff6600;
+    margin-top: -20px;
+}
+
+.content > p {
+    text-align: justify;
+    line-height: 20px;;
+}
+
+.content > a {
+    font-size: 12px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #ff6600;
+    transition: .3s;
+}
+
+.content > a:hover {
+    color: #fff;
+}
+
+.content > select {
+    height: 20px;
+    width: 70px;
+    background: #333;
+    border: none;
+    outline: none;
+    color: #ff6600;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.content > strong {
+    float: left;
+    font-family: arial;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: white;
+
+}
+
+.content > .buttons {
+    margin-top: 80px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.content > .buttons button {
+    height: 40px;
+    width: 140px;
+    background: #ccc;
+    color: #333;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: verdana;
+}
+
+.content > .buttons button:nth-child(2) {
+    background: #ff6600;
+    color: white;
+}
+
+.content > .buttons button:hover {
+    color: #ff6600;
+    background: white;
+}
+
+.controls {
+    margin-left: 130px;
+    height: 20px;
+    width: 180px;
+}
+
+.controls > label {
+    margin: -20px 20px 20px 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #333;
+    cursor: pointer;
+}
+
+.controls > label:hover {
+    background: #ccc;
+}
+
+#r2:checked ~ .container .slides .slide1{
+    margin-left: -66.5%;
+}
+
+#r3:checked ~ .container .slides .slide1{
+    margin-left: -400%;
+}
+
+
+
+
